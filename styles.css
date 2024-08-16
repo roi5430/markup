@@ -156,6 +156,7 @@ hr {
     font-weight: 200;
     transition: color 0.3s ease;
 }
+
 .header__nav-link:hover,
 .header__nav-link:focus,
 .header__nav-link_current {
@@ -235,13 +236,17 @@ hr {
     font-size: 19px;
     line-height: 30px;
     letter-spacing: 0.38px;
+    position: relative;
 }
 
-.hero__button hr {
-    border: none;
+.hero__button::after {
+    content: '';
+    position: absolute;
     height: 1px;
     background-color: #ffffff;
     width: 152px;
+    left: 45px;
+    bottom: 0;
 }
 
 .hero__list {
@@ -702,7 +707,7 @@ hr {
 
 .chapter__footer-link {
     color: var(--main-color);
-    letter-spacing: 0.19;
+    letter-spacing: 0.19px;
     transition: color 0.3s ease;
 }
 
@@ -854,7 +859,7 @@ hr {
     color: var(--main-color);
     font-size: 24px;
     line-height: 33px;
-    letter-spacing: 0.24;
+    letter-spacing: 0.24px;
     font-weight: 300;
     margin-bottom: 19px;
 }
@@ -878,7 +883,7 @@ hr {
     color: var(--main-color);
     font-size: 19px;
     line-height: 23px;
-    letter-spacing: 0.38;
+    letter-spacing: 0.38px;
     font-weight: 200;
     border-bottom: 1.5px solid var(--main-color);
 }
