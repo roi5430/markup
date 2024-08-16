@@ -13,10 +13,14 @@
     box-sizing: border-box;
 }
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
     background-color: var(--white-color);
     font-family: 'Cardo', serif;
     color: var(--white-color);
+    overflow-x: hidden;
 }
 
 img {
