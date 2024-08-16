@@ -7,7 +7,6 @@
     --text-color: #969aa0;
     --typical-margin: 30px;
     --svg-color: #141414;
-    --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -51,6 +50,7 @@ img {
     letter-spacing: 0.57px;
     transition: transform 0.3s ease;
 }
+
 .button:hover,
 .button:focus {
     transform: scale(1.08);
@@ -74,12 +74,6 @@ ul {
 
 a {
     text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-a:hover,
-a:focus {
-    transform: scale(1.08);
 }
 
 hr {
@@ -109,6 +103,11 @@ hr {
     transition: transform 0.3s ease;
 }
 
+.logo-link:hover,
+.logo-link:focus {
+    transform: scale(1.08);
+}
+
 .logo-link svg:first-child {
     margin-right: 10px;
 }
@@ -129,6 +128,12 @@ hr {
     background-color: var(--white-color);
     transition: transform 0.3s ease;
 }
+
+.header__media-link:hover,
+.header__media-link:focus {
+    transform: scale(1.08);
+}
+
 .header__media-link svg {
     fill: #141414;
 }
@@ -152,10 +157,7 @@ hr {
     transition: color 0.3s ease;
 }
 .header__nav-link:hover,
-.header__nav-link:focus {
-    color: var(--accent-color);
-}
-
+.header__nav-link:focus,
 .header__nav-link_current {
     color: var(--accent-color);
 }
@@ -476,6 +478,7 @@ hr {
     height: 100px;
     margin-bottom: 22px;
 }
+
 .recommendation__item-name {
     color: var(--main-color);
     font-size: 24px;
@@ -610,11 +613,13 @@ hr {
 .chapter__wrapper hr {
     margin-bottom: 60px;
 }
+
 .chapter__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+
 .chapter__item {
     background-color: var(--white-color);
     padding: 40px;
@@ -972,6 +977,11 @@ hr {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+}
+
+.footer__media-link:hover,
+.footer__media-link:focus {
+    transform: scale(1.08);
 }
 
 .footer__list {
